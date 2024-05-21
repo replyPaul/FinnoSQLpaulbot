@@ -1,0 +1,32 @@
+[client]
+#toolbarMode = "minimal"
+
+[runner]
+fastReruns = true
+enforceSerializableSessionState = false
+
+[server]
+enableStaticServing = true
+runOnSave = true
+
+[theme]
+base="dark"
+
+gatherUsageStats = false
+
+# screens and components. Examples of widgets using this color are st.slider and st.checkbox.
+primaryColor = "#BBBB00" #Buddha Gold
+
+# Background color for the container.
+backgroundColor = "#2D2D0D"
+secondaryBackgroundColor =  "#222200" 
+
+
+# Font color for the page.
+textColor = "#F9F9FF"
+
+# Font family (serif | sans serif | mono) for the page. Will not impact code areas.
+# Default: "sans serif"
+#font = "monospace"
+
+#Better not to change color values w/o discussing with PaulB

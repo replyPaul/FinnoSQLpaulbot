@@ -1,0 +1,6 @@
+streamlit==1.34.0
+openai
+pytest
+replicate
+transformers
+snowflake-snowpark-python[pandas]
