@@ -98,7 +98,7 @@ if "messages" not in st.session_state:
 
 
 # Prompt for user input 
-if prompt := st.chat_input():
+if prompt := st.chat_input(placeholder="✍️ Type your prompt here"):
     st.session_state.messages.append({"role": "user", "content": prompt})
 
 
