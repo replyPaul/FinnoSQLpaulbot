@@ -1,6 +1,5 @@
 streamlit==1.34.0
-openai
-pytest
 replicate
+openai
 transformers
 snowflake-snowpark-python[pandas]
