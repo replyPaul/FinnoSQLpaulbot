@@ -58,7 +58,7 @@ with st.sidebar:
             image = Image.open(logo)
             st.image(image,width=230)
     st.markdown("---")
-    st.markdown("replypaul@gmail.com\n")
+    #st.markdown("replypaul@gmail.com\n")
 
 
 # Function for generating Snowflake Arctic response
