@@ -43,11 +43,12 @@ and wrap the generated sql code with ``` sql code markdown in this format e.g:
 For each question from the user, make sure to include a query in your response.
 
 Now to get started, please briefly introduce yourself, describe the reference table at a high level, and share the available metrics in few sentences.
-Then provide 10 numbered example questions in separate lines within a bordered table around all the questions.
+Then provide 10 numbered example questions in separate lines within a bordered table around all the questions. Try to include 'list' seeking sample questions more.
 At the bottom, you can write that "You may copy from these question examples Or ask new questions related to the data base topic for your prompt".
 """
 
 @st.cache_data(show_spinner="Loading FinnoSQLbot's context...")
+
 def get_table_context(table_name: str, table_description: str, metadata_query: str = None):
     table = table_name.split(".")
     conn = st.connection("snowflake")

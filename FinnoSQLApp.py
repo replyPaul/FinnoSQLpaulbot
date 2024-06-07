@@ -36,28 +36,37 @@ st.markdown(
     """,
         unsafe_allow_html=True,
     )
-st.write("###### AI Asst. performs financial data exploration and answers questions executing SQL queries on Snowflake data, create a tabular response from the dynamic SQL")
+st.write("###### AI Asst. performs financial data exploration and answers questions executing SQL queries on SNOWFLAKE data, create a tabular response from the dynamic SQL")
             
 # Set icons
 icons = {"assistant": "💰", "user": "💭"}
 
 
 with st.sidebar:
-    st.write("Made in an AI hackathon inspired by SNOWFLAKE - May 2024 - Paul Biswa ")
-    st.markdown("---")
-    st.markdown("Powered by **Snowflake ARCTIC©** LLM\n\n" " Arctic Instruct is a 480B parameter foundation LLM. ")
-   
-    st.subheader("Adjust model parameters")
-    temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.3, step=0.01)
-    top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
-    max_length = st.sidebar.slider('max_tokenlength', min_value=32, max_value=300, value=150, step=25)
-    st.markdown("---")
+    st.write("Made in an AI hackathon organized by SNOWFLAKE - May 2024 - Paul Biswa ")
+    #st.markdown("---")
     col1, _ = st.sidebar.columns(2)  # Creating two columns (use one for logos)
     for logo in logos:
         with col1:
             image = Image.open(logo)
             st.image(image,width=230)
     st.markdown("---")
+    st.markdown(f"#### With no prior knowledge of SQL, any users can enter questions in plain English regarding the linked financial database by Snowflake worksheets. \n\n")
+    st.subheader("Adjust model parameters")
+    temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.3, step=0.01)
+    top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
+    max_length = st.sidebar.slider('max_tokenlength', min_value=32, max_value=300, value=150, step=25)
+    st.markdown("---")
+    st.markdown(f"The used Snowflake ARCTIC INSTRUCT model is a 480B parameter LLM. \n\n To enhance user experience, the app dynamically generates a sample of ten questions on-the-fly based on the connected financial table.\n\n"
+                f" \n\n Once the seeker submits a typed or selected question, the input is processed \n"
+                f"using natural language processing (NLP) to understand the query. \n\n The **Snowflake ARCTIC©** language model then translates \n"
+                f"the natural language input into an SQL query. \n\n Finally, the SQL query is executed on the connected database, displays SUMMARIZATION and Extra Info, after execution the app displays output in an easy-to-read tabular format. ")
+    st.markdown("NLP to SQL conversion is powered by **Snowflake ARCTIC©** LLM and Snowflake Data Platform Worksheets\n ")
+        
+
+    st.markdown("---")
+    
+   
     #st.markdown("replypaul@gmail.com\n")
 
 
@@ -74,8 +83,8 @@ def generate_arctic_response():
     prompt.append("")
     prompt_str = "\n".join(prompt)
     
-    if get_num_tokens(prompt_str) >= 3072:
-        st.error("Conversation length too long. Please keep it under 3072 tokens.")
+    if get_num_tokens(prompt_str) >= 102:
+        st.error("Conversation length too long. Please keep it under 1072 tokens.")
         st.button('Clear chat history', on_click=clear_chat_history, key="clear_chat_history")
         st.stop()
 

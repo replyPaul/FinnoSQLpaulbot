@@ -9,7 +9,7 @@ author_email: replypaul@gmail.com
 ---
 
 # FinnoSQL ChatBot 
-## An interactive GenAI powered chat assistant with expertise in executing SQL queries from users promots.
+## An interactive GenAI powered chat assistant with expertise in executing SQL queries from users prompts.
 
 This app performs financial data exploration and answers questions executing SQL queries on Snowflake data, create a tabular response from the dynamic SQL it executed from uswer questions.
 
@@ -48,4 +48,7 @@ replicate
 transformers
 snowflake-snowpark-python[pandas]
 
-![Landing Page of the FinnoSQLbot App](<FinnoSQLBot App UI.jpeg>)
+
+
+![Landing Page of the FinnoSQLbot App](<FinnoSQLBot App UI.png>)
+![Landing Page scroll bottom section of the App ](<FinnoSQLBot App UI 02.png>)
