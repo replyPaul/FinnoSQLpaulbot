@@ -8,11 +8,19 @@ app_author: Paul Biswa
 author_email: replypaul@gmail.com
 ---
 
-# FinnoSQL ChatBot 
-## An interactive GenAI powered chat assistant with expertise in executing SQL queries from users prompts.
 
-This app performs financial data exploration and answers questions executing SQL queries on Snowflake data, create a tabular response from the dynamic SQL it executed from uswer questions.
+# 💬 FinnoSQL ChatBot : GenAI-Powered SQL Chat Assistant
+## An interactive Generative AI-driven chat assistant designed to interpret natural language prompts and execute SQL queries dynamically.
+This application enables financial data exploration by leveraging LLM-based prompt parsing to generate context-aware SQL statements. It connects to a Snowflake data warehouse, executes the queries securely, and returns structured tabular responses based on real-time results.
 
+## 🔧 Technical Highlights
+Natural Language to SQL Translation using GenAI models
+Dynamic Query Generation with semantic understanding of user intent
+Secure Execution on Snowflake with parameterized queries
+Tabular Output Rendering using interactive UI components (e.g., Streamlit, Gradio)
+Error Handling & Query Validation to ensure safe and accurate data access
+Domain-Specific Optimization for financial datasets and KPIs
+This assistant is ideal for non-technical users, data analysts, or business stakeholders who want to interact with complex datasets without writing SQL manually.
 Access Snowflake Arctic Instruct LLM via the Replicate API
 Snowflake's brand new open-source foundation model Arctic was released on April 24, 2024
 Arctic is available for free for a limited time on Snowflake Cortex (until end of May)
