@@ -69,5 +69,9 @@ snowflake-snowpark-python[pandas]
 
 
 
+
 ![Landing Page of the FinnoSQLbot App](<FinnoSQLBot App UI.png>)
 ![Landing Page scroll bottom section of the App ](<FinnoSQLBot App UI 02.png>)
+![](<FiinoSQL at Snowflake 2024-05-22.jpeg>)
+![](<Project Story Screenshot 2024-05-22.jpeg>)
+
