@@ -11,15 +11,22 @@ author_email: replypaul@gmail.com
 
 # 💬 FinnoSQL ChatBot : GenAI-Powered SQL Chat Assistant
 ## An interactive Generative AI-driven chat assistant designed to interpret natural language prompts and execute SQL queries dynamically.
-This application enables financial data exploration by leveraging LLM-based prompt parsing to generate context-aware SQL statements. It connects to a Snowflake data warehouse, executes the queries securely, and returns structured tabular responses based on real-time results.
+This application enables **financial data exploration** by leveraging **LLM-based prompt parsing** to generate **context-aware SQL** statements. 
+It connects to a **Snowflake data warehouse**, executes the queries securely, and returns **structured tabular responses** based on real-time results.
 
 ## 🔧 Technical Highlights
-**Natural Language to SQL Translation** using GenAI models
-**Dynamic Query Generation** with semantic understanding of user intent
-**Secure Execution on Snowflake** with parameterized queries
-**Stuctured Tabular Output Rendering** using interactive UI components (e.g., Streamlit, Gradio)
-**Error Handling & Query Validation** to ensure safe and accurate data access
-**Domain-Specific Optimization** for financial datasets and KPIs
+- **Natural Language to SQL Translation** using GenAI models
+
+- **Dynamic Query Generation** with semantic understanding of user intent
+
+- **Secure Execution on Snowflake** with parameterized queries"
+
+- **Stuctured Tabular Output Rendering** using interactive UI components (eg, Streamlit, Gradio)}
+
+- **Error Handling & Query Validation** to ensure safe and accurate data access
+
+- **Domain-Specific Optimization** for financial datasets and KPIs
+
 
 This assistant is ideal for non-technical users, data analysts, or business stakeholders who want to interact with complex datasets without writing SQL manually.
 
